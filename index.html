@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navbar</title>
+    <style>
+        nav{
+    background-color: rgb(226, 46, 43);
+    padding: 10px;
+        }
+        h1{
+    color: black;
+    text-align: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    font-size: 25px;
+}
+a{
+    color: darkblue;
+        text-decoration: none;
+
+}
+nav{
+    background-color: rgb(226, 46, 43);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-section{
+    background-color: lightgray;
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    justify-content: center;
+     align-items: center;
+    height: auto;
+}
+.card{
+    background-color: white;
+    width: 120px;
+    height: 80px;
+    display: flex;
+justify-content: center;
+text-align: center;
+padding-top: 30px;
+border-radius: 10px;
+
+.card:hover{
+    transform: scale(1.05);
+}
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+.grid-box{
+    border-color: rgb(226, 43, 43);
+    background-color: orange;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.relative-box{
+    background-color: lightblue;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    left: 10px;
+}
+*{
+    margin: 9px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent-box{
+    height: 120px;
+    border: 1px solid gray;
+    position: relative;
+    margin-top: 40px;
+}
+.absolute-box{
+    background-color: red;
+    color: white;
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sticky-box{
+    background-color: purple;
+    color: black;
+    height: 40px;
+
+    position: sticky;
+  top: 0;
+  margin-top: 30px;
+}
+.static-box{
+    height: 40px;
+    border: 1px solid black;
+    position: static;
+    margin-top: 30px;
+}
+@media (max-width: 768px) {
+    background-color: lightgray;
+}
+    </style>
+</head>
+
+<body>
+    <nav>
+<h1>My Website</h1>
+    <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+</nav>
+<h1>Flexbox Example</h1>
+<section class="flex-section">
+<div class="card">HTML</div>
+<div class="card">CSS</div>
+<div class="card">Javascript</div>
+
+</section>
+<h1>Grid Layout Example</h1>
+
+<div class="grid-container">
+
+    <div class="grid-box">1</div>
+    <div class="grid-box">2</div>
+    <div class="grid-box">3</div>
+    <div class="grid-box">4</div>
+    <div class="grid-box">5</div>
+    <div class="grid-box">6</div>
+
+</div>
+<h1>CSS Position Values</h1>
+
+<div class="relative-box">
+    position: relative
+</div>
+<div class="parent-box">
+<p>Parent Box</p>
+<div class="absolute-box">
+    position absolute
+</div>
+</div>
+<div class="sticky-box">
+    position: sticky
+</div>
+<div class="static-box">
+    position: static (default)
+</div>
+</body>
+</html>
